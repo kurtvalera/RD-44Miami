@@ -1,0 +1,285 @@
+@font-face
+{
+    font-family:'Druk LCG Super';
+    src: url(../../fonts/DrukLCG/DrukCondLCG-Super.ttf)
+}
+@font-face
+{
+    font-family:'Druk LCG SuperItalic';
+    src: url(../../fonts/DrukLCG/DrukCondLCG-SuperItalic.ttf)
+}
+@font-face
+{
+    font-family:'Druk LCG SuperItalic';
+    src: url(../../fonts/DrukLCG/DrukCondLCG-SuperItalic.ttf)
+}
+@font-face
+{
+    font-family:'Druk LCG Bold';
+    src: url(../../fonts/DrukLCG/DrukLCG-Bold.ttf)
+}
+
+@font-face
+{
+    font-family:'Druk LCG Wide';
+    src: url(../../fonts/DrukLCG/DrukWideLCG-Bold.ttf)
+}
+@font-face
+{
+    font-family:'Ogg Roman';
+    src: url(../../fonts/Ogg/Roman.otf)
+}
+@font-face
+{
+    font-family:'FK Grotesk';
+    src: url(../../fonts/FKGrotesk/FKGrotesk-Regular.ttf)
+}
+@font-face
+{
+    font-family:'FK Grotesk Mono';
+    src: url(../../fonts/FKGrotesk/FKGroteskMono-Regular.ttf)
+}
+body
+{
+    overflow-x:hidden;
+    height:100vh;
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(0, 0, 00));
+}
+
+.try
+{
+    background-image: linear-gradient(rgba(255,0,0,0), rgb(0, 0, 00));
+}
+
+.container-body
+{
+    background-image: url('../images/avatar-bg.png');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size:cover;
+}
+.druk-bold
+{
+    font-family: 'Druk LCG Wide'
+}
+.ogg-roman
+{
+    font-family: 'Ogg Roman';
+}
+
+.fk-grotesk
+{
+    font-family: 'FK Grotesk'
+}
+
+.fk-grotesk-mono
+{
+    font-family: 'FK Grotesk Mono'
+}
+.text-h1
+{
+    font-size:75px;
+    font-weight:500;
+}
+
+.w-h1
+{
+    width:559px;
+}
+
+.text-h2
+{
+    font-size:80px;
+    font-weight:400;
+}
+.h1-button-border
+{
+    border: 1px solid rgba(82, 232, 255, 0.5);
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+   
+}
+.h1-button
+{
+    border-radius: 100px;
+    padding: 14px 28px 14px 28px;
+    background-color: #52E8FF;
+    outline:1px solid rgba(82, 232, 255, 0.5);
+    outline-offset: 5px
+}
+
+.h2-button
+{
+    border-radius: 100px;
+    padding: 14px 28px 14px 28px;
+    background-color: rgba(16, 46, 51, 1);
+    outline:1px solid rgba(16, 46, 51, 1);
+    outline-offset: 5px;
+    color:rgba(82, 232, 255, 1)
+}
+.button-text
+{
+    font-weight:600;
+    font-size:12px;
+}
+
+.bot-nav
+{
+    
+    height:80px;
+    transition:0.2s ease-in-out
+}
+
+.nav-active
+{
+    background-color: rgba(82, 232, 255, 0.2);
+    border-top: 1px solid #52E8FF !important;
+}
+
+.nav-item
+{
+    border-top:1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.nav-item:hover
+{
+    border-top: 1px solid #52E8FF;
+    background-color: rgba(82, 232, 255, 0.2);
+
+}
+
+.nav-active
+{
+    color:white;
+}
+
+.nav-a
+{
+    transition: 0.2s ease-in-out
+}
+
+.nav-item:hover > .nav-a
+{
+    color:white;
+}
+
+.box-top
+{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 24px;
+
+width: 400px;
+height: 160px;
+
+background: rgba(0, 0, 0, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(25px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 6px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.box-bot
+{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px 24px;
+gap: 17px;
+
+width: 400px;
+height: 72px;
+
+background: rgba(0, 0, 0, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(25px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 6px;
+margin-top:9px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.box-right
+{
+    margin-bottom: 100px;
+}
+
+.ozura-button
+{
+    border-radius: 100px;
+    padding: 14px 28px 14px 28px;
+    background: rgba(255, 255, 255, 0.2);
+    outline:1px solid rgba(255, 255, 255, 0.3);
+    outline-offset: 5px;
+    color:white
+}
+
+.ozura-text
+{
+    font-family:'FK Grotesk Mono';
+    font-weight:500;
+    font-size:20px;
+}
+
+.ozura-value
+{
+    font-weight:500;
+    font-size:20px;
+}
+
+.ozura-label
+{
+    font-size:10px;
+    font-weight:500;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-ozura
+{
+    color: rgba(255, 255, 255, 0.5);
+    font-size:24px;
+    transition: 0.2s ease-in-out
+}
+
+.fa-ozura:hover
+{
+    cursor:pointer;
+    color:#52E8FF
+}
+
+.body-avatar, .body-private, .body-space, .body-physical, .body-luxury
+{
+    transition: 0.2s ease-in-out
+}
+
+.container-body
+{
+    transition: 0.2s ease
+}
