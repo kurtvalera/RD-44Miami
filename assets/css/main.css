@@ -40,6 +40,11 @@
     src: url(../../fonts/FKGrotesk/FKGroteskMono-Regular.ttf)
 }
 
+img 
+{
+    pointer-events:none;
+}
+
 p, span, h1, h2, h3, h4, h5, h6, div
 {
     -moz-osx-font-smoothing: auto;
@@ -67,6 +72,18 @@ html
     background-image: linear-gradient(rgba(255,0,0,0), rgb(0, 0, 00));
 }
 
+@keyframes fadeIn
+{
+    from 
+    {
+        opacity:0;
+    }   
+    to 
+    {
+        opacity:1;
+    }
+}
+
 .container-full
 {
     /* Initial background image for landing page */
@@ -74,6 +91,7 @@ html
     background-color: rgba(0, 0, 0, 0.6);
     background-size:cover;
     transition:0.2s ease;
+    animation: fadeIn 0.2s;
 }
 .druk-bold
 {
@@ -287,6 +305,7 @@ flex-grow: 0;
 {
     font-weight: 500;
     font-size: 24px;
+    font-family:'FK Grotesk';
 }
 
 .box-bot
@@ -338,6 +357,12 @@ flex-grow: 0;
     font-size: 12px;
 }
 
+.overlay-nav
+{
+    transition: 0.2s ease-in-out;
+    animation: fadeIn 0.2s;
+}
+
 .ozura-button-nav
 {
     border-radius: 100px;
@@ -361,7 +386,7 @@ flex-grow: 0;
 
 .ozura-text
 {
-    font-family:'FK Grotesk Mono';
+    font-family:'FK Grotesk';
     font-weight:500;
     font-size:20px;
 }
